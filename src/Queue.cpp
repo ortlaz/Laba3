@@ -57,19 +57,3 @@ void Queue::erase(){
 }
 
 
-void Queue::Add()
-{
-    int x;
-    std::cout<<"¬ведите элементы очереди или 0, если хотите закончить ввод.\n";
-    std::cin>>x;
-    Node temp = new tNode;
-    temp->next = nullptr;
-
-    if (first)
-    {
-        last->next = temp;
-        last = temp;
-    }else {
-        first = last = temp;
-    }
-}

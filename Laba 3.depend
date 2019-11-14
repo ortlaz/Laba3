@@ -11,3 +11,15 @@
 	<iostream>
 	<stdlib.h>
 
+1573736062 source:c:\users\lenovo\documents\university\cèÀÎÄ\laba3\src\queue.cpp
+	"Queue.h"
+
+1573736062 c:\users\lenovo\documents\university\cèÀÎÄ\laba3\include\queue.h
+	<iostream>
+	<stdlib.h>
+
+1573736062 source:c:\users\lenovo\documents\university\cèÀÎÄ\laba3\main.cpp
+	<iostream>
+	<Queue.h>
+	<windows.h>
+

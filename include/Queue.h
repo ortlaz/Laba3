@@ -22,7 +22,6 @@ class Queue
         Node createQ(); //создание очереди
         void outQ(Node a); //вывод очереди
         void erase(); //удаление элемента из очереди
-        void Add(); //добавление элемента в конец
 };
 
 #endif // QUEUE_H

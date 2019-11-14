@@ -2,6 +2,8 @@
 #include <Queue.h>
 #include <windows.h>
 
+static int cnt = 0;
+
 using namespace std;
 
 double maxEl(double arr[], int sz);
@@ -16,7 +18,7 @@ int main()
     while (var){
         system("cls");
 
-        cout<<"1.Найти максимальный элемент массива\n2.Создание очереди\n3.Вывод очереди\n4.Удаление очереди\n5.Добавление элемента в конец очереди\n0.Выход\n";
+        cout<<"1.Найти максимальный элемент массива\n2.Создание очереди\n3.Вывод очереди\n4.Удаление очереди\n0.Выход\n";
         cout<<"Выберите опцию:";
         cin>>var;
 
@@ -31,6 +33,7 @@ int main()
                     cin>>arr[i];
                 }
                 cout<<"MAX:"<<maxEl(arr,size - 1)<<endl;
+                cout<<"Глубина рекурсии:"<<cnt<<endl;
                 system("pause");
                 break;
             }
@@ -47,11 +50,6 @@ int main()
             }
             case 4:{
                 Q.erase();
-                system("pause");
-                break;
-            }
-            case 5:{
-                Q.Add();
                 system("pause");
                 break;
             }
@@ -73,6 +71,7 @@ int main()
 
 //Поиск максимума в массиве
 double maxEl(double arr[], int sz) {
+    cnt++;
     if(!sz) return arr[0];
     else{
      return maxEl(arr+(arr[0]<arr[sz]),sz - 1);
