@@ -34,6 +34,7 @@ int main()
                 }
                 cout<<"MAX:"<<maxEl(arr,size - 1)<<endl;
                 cout<<"Глубина рекурсии:"<<cnt<<endl;
+                cnt = 0;
                 system("pause");
                 break;
             }
