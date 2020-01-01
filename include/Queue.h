@@ -19,9 +19,9 @@ class Queue
         ~Queue();
         Node getLast();
         Node getFirst();
-        Node createQ(); //создание очереди
-        void outQ(Node a); //вывод очереди
-        void erase(); //удаление элемента из очереди
+        Node createQ(); //СЃРѕР·РґР°РЅРёРµ РѕС‡РµСЂРµРґРё
+        void outQ(Node a); //РІС‹РІРѕРґ РѕС‡РµСЂРµРґРё
+        void erase(); //СѓРґР°Р»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РёР· РѕС‡РµСЂРµРґРё
 };
 
 #endif // QUEUE_H

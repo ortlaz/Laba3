@@ -18,7 +18,7 @@ Node Queue::createQ(){
 
     Node top;
     int data;
-    std::cout<<"Ââåäèòå ýëåìåíòû î÷åðåäè èëè 0, åñëè õîòèòå çàêîí÷èòü ââîä.\n";
+    std::cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð¾Ñ‡ÐµÑ€ÐµÐ´Ð¸ Ð¸Ð»Ð¸ 0, ÐµÑÐ»Ð¸ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð·Ð°ÐºÐ¾Ð½Ñ‡Ð¸Ñ‚ÑŒ Ð²Ð²Ð¾Ð´.\n";
     std::cin>>data;
 
     if (!data) return nullptr;
@@ -48,7 +48,7 @@ void Queue::erase(){
     Node temp = first;
     if(temp){
         temp = first->next;
-        std::cout<<"Ýëåìåíò "<<first->data<<"âûøåë\n";
+        std::cout<<"Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ "<<first->data<<"Ð²Ñ‹ÑˆÐµÐ»\n";
         delete first;
         first = temp;
         erase();
