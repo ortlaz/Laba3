@@ -10,8 +10,8 @@ double maxEl(double arr[], int sz);
 
 int main()
 {
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
+    SetConsoleCP(866);
+    SetConsoleOutputCP(866);
     Queue Q;
     int var;
 
